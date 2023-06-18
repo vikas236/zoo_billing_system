@@ -58,10 +58,12 @@ const create_table = () => {
 create_table();
 
 const update_qrdata = () => {
-    let data = "";
+    let data = "ticket no: 0\n";
     for (let i = 0; i < f_tbody.childNodes.length; i++) {
         let row = f_tbody.childNodes[i];
+        data += "\n";
         for (let i = 0; i < 4; i++) {
+            // if (i == 0) { data += (row.childNodes[i].innerHTML).substr(0, 1) + " "}
             data += row.childNodes[i].innerHTML + " ";
         }
     }
@@ -70,8 +72,8 @@ const update_qrdata = () => {
 
 let qrcode = new QRCode(document.querySelector(".qrcode"), {
     text: "hello, there",
-    width: 128,
-    height: 128
+    width: 200,
+    height: 200
 });
 qrcode.makeCode(update_qrdata());
 

@@ -187,7 +187,7 @@ button:focus {
 }
 
 .show_ticket .qrcode {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 @media print {
