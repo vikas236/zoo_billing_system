@@ -1,0 +1,29 @@
+{
+  "name": "zoo_billing_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.zoo_billing_system",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "keywords": [],
+  "author": "vikas236 <saivikas461@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "electron": "^25.1.1",
+    "electron-builder": "^24.4.0",
+    "webpack": "^5.87.0"
+  }
+}

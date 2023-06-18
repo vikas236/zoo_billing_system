@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+    <title>Indira Gandhi Zoological Park</title>
+</head>
+
+<body>
+    <div class="booking">
+        <div class="ticket_booking">
+            <h4 class="left">left arrow (decrease quantity)</h4>
+            <h4 class="right">right arrow (increase quantity)</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Quantity</th>
+                        <th>Rate</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="row">
+                <div>
+                    <span class="tnum_l">Ticket Number: </span>
+                    <span class="tnum">0000000</span>
+                </div>
+                <div>
+                    <span class="total_l">Total: </span>
+                    <span class="total">₹0</span>
+                </div>
+            </div>
+            <div class="btns">
+                <button class="print">Print</button>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+        <div class="show_ticket">
+            <h4 class="heading">INDIRA GANDHI ZOOLOGICAL PARK</h4>
+            <h4 class="heading">Visakhapatnam</h4>
+            <hr>
+            <span class="tnum">Ticket No: 0 &emsp;</span><span class="date">Date: 0-0-0</span>
+            <span class="time"></span>
+            <hr>
+            <table class="final_table">
+                <tr>
+                    <th>Type</th>
+                    <th>Quantity</th>
+                    <th>Rate</th>
+                    <th>Amount</th>
+                </tr>
+                </thead>
+                <tbody class="f_tbody"></tbody>
+            </table>
+            <hr>
+            <h4 class="f_total">/-</h4>
+            <hr>
+            <div class="qrcode"></div>
+            <p class="message">Conserve, Protect, Preserve Celebrate Wild life Do not tease or feed animals.</p>
+        </div>
+    </div>
+
+    <script src="./qrcode.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
